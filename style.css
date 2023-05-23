@@ -1,0 +1,119 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --bg-color: #FFFFFF;
+  --bg-cards: #E1E1E6;
+
+
+
+  --fc-all: #323238;
+
+
+  font-size: 62.5%;
+
+}
+
+body{
+  background-color: var(--bg-color);
+  color: var(--fc-all);
+
+  font-family:'Roboto', sans-serif;
+  font-weight: 500;
+
+  display: grid;
+
+  min-height: 100vh;
+}
+
+main{
+  justify-self: center;
+  align-self:center;
+
+  width: 821px;
+  height: 336px;  
+
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+#controls{
+  
+  justify-self: center;
+  align-self:center;
+  
+}
+
+main #controls .timer{
+  font-size: clamp(4rem, 4rem + 10vh, 8.8rem);
+  
+  display:flex;
+  margin-bottom: 1.6rem;
+}
+
+main #controls .controlsTimer{
+ display: flex;
+ justify-content: space-between;
+}
+
+main #controls .controlsTimer button{
+  border: none;
+  background: var(--bg-color);
+
+  cursor: pointer;
+}
+.pause svg path{
+  fill: #323238;
+}
+#cards{
+  display:grid;
+  grid-template-columns: 50% 50%;
+}
+
+#cards div{
+  background: var(--bg-cards);
+
+  width: 138px;
+  height: 152px;
+
+  border-radius: 24px;
+
+  display:grid;
+
+  justify-self: center;
+  align-self:center;
+
+}
+.hide{
+  display:none;
+  opacity:0;
+}
+#cards .active{
+  background: #02799D;
+  color:white;
+  
+}
+#cards svg path .whiteButton{
+  fill: white;
+}
+/*#cards .rain{
+  background: #02799D;
+}
+#cards .rain button{
+  background: #02799D;
+}*/
+#cards .rain svg path{
+  fill: black;
+}
+#cards div button{
+  justify-self: center;
+  align-self:center;
+
+  border: none;
+
+  background: var(--bg-cards);
+
+  cursor: pointer;
+}
+
